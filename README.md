@@ -12,7 +12,7 @@ Special things you have to figure out: filtering models, adding custom routes.
 
 Create an application to track homework assignments.
 * This application should have users, assignments, and completed assignments (turn-ins? This needs a decent name.)
-* An assignment has a title, description, assigned date, and due date. All of the above are required. The description is in Markdown and should render correctly.
+* An assignment has a title, description, assigned date, and due date. All of the above are required. The description should render correctly.
 * Each user can complete each assignment, making a record of that completion.
 * Users have to be able to log in. You can make a simple login or use another gem if you think that's a good idea.
 * Each person has a page that shows their assignments and whether or not they've completed each one.
