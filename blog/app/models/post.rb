@@ -5,4 +5,6 @@ class Post < ActiveRecord::Base
   validate :date_published, presence: true
   validate :published, presence: true
 
+  has_many :comments
+
 end

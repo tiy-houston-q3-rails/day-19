@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :posts
   root to: "blog#list"
   get "articles/:id" => "blog#article", as: "article"
+  post "comments/:article_id/" => "blog#comments", as: "comment"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
