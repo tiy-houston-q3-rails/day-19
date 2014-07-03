@@ -1,0 +1,9 @@
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <h2><%= link_to post.title, article_path(post) %></h2>
+    <p><%= post.date_published %></p>
+    <%= simple_format truncate(post.body, length: 300) %>
+    <%= link_to "<-- Read More -->", article_path(post), class: "btn btn-large btn-success"%>
+  </div>
+<% end %>
