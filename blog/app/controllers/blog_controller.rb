@@ -1,4 +1,5 @@
 class BlogController < ApplicationController
+
   def list
     @posts = Post.all.order("date_published desc")
   end

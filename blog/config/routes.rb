@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'auth/login'
+
   resources :posts
   root to: "blog#list"
   get "articles/:id" => "blog#article", as: "article"
   post "comments/:article_id/" => "blog#comments", as: "comment"
+
+  get "auth/login" => "auth#login", as: "login"
+  post "auth/verify" => "auth#verify", as: "verify_login"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
